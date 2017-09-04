@@ -6,7 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Todo App</title>
     <link rel="stylesheet" href="Stylesheets/style.css">
-    
+
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyD_JPoJX04u9jQ2mmJQcbTzhJwChOtWByk",
+        authDomain: "todo-app-f1c42.firebaseapp.com",
+        databaseURL: "https://todo-app-f1c42.firebaseio.com",
+        // projectId: "todo-app-f1c42",
+        // storageBucket: "todo-app-f1c42.appspot.com",
+        // messagingSenderId: "350599422035"
+      };
+      firebase.initializeApp(config);
+    </script>
 </head>
 <body>
 <div class="w3-content w3-section" >

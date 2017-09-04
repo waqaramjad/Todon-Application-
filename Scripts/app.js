@@ -3,6 +3,11 @@ var orderList = document.getElementById('list');
 var btn = document.getElementById('buttonAdd');
 var tempDatastorage ;
 
+
+var database = firebase.database().ref('/');
+
+
+// add logic 
 function addTodoItem()
 {
     var textValue = inputText.value;
@@ -12,6 +17,7 @@ if(textValue=== '')
 }
 else
 {
+    database.child('todo').push(inputText.value);
     var textNode = document.createTextNode(textValue);
     var ListItem = document.createElement('li');
     
@@ -34,6 +40,13 @@ else
    
 
 }
+database.child('todo').on('child_added',function(snapshot){
+
+var saveSnapshot = snapshot.val();
+saveSnapshot.id = snapshot.key;
+render(saveSnapshot)  
+
+}) 
 
 function deleteNode(getlist)
 {
@@ -64,7 +77,7 @@ function saveNode( updatedTextValue)
 
 }
 
-
+// use for slider 
 var myIndex = 0;
         carousel();
 
