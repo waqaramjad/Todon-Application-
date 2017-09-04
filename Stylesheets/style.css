@@ -1,0 +1,69 @@
+li img.remove{
+    height:13px;
+    width: 13px; 
+    float: right;
+    
+}
+
+#inputText
+{
+        height: 29px;
+       width: 258px;
+}
+#absolute
+{
+    
+    position: absolute;
+    background-color: antiquewhite;
+    padding: 9px 44px 171px 44px;
+    z-index: 15;
+    top: 50%;
+    left: 50%;
+    margin: -203px 0 0 -150px;
+}
+
+ul
+{
+    list-style: none;
+}
+.btnFloat
+{
+    float: right;
+    height: 22px;
+}
+
+#imgLogo
+{
+    position: absolute;
+    position: absolute;
+    z-index: 15;
+    top: 50%;
+    left: 50%;
+    margin: -100px 0 0 -150px;
+}
+
+li
+{
+    margin-left: -39px;
+    background-color: lightcyan;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+}
+#buttonAdd
+{
+    margin-bottom: -8px;
+    width: 33px;
+    height: 23px;
+}
+
+.mySlides 
+{
+
+  position: fixed;
+    width: 100%;
+    height: 100%;
+    left: -0%;
+    background: #000;
+}
+
+

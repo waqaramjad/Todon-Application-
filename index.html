@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="Stylesheets/style.css">
+    
+</head>
+<body>
+<div class="w3-content w3-section" >
+            <img class="mySlides" src="images/1.jpg" alt="beautiful"  >
+            <img class="mySlides" src="images/2.jpg" alt="beautiful" >
+            <img class="mySlides" src="images/3.jpg" alt="beautiful" >
+            <img class="mySlides" src="images/4.jpg" alt="beautiful" >
+    </div>
+    <div  id="absolute" align="centre">
+        <div >
+            <img src="images/6.jpg" alt="pic" height="100px" width="294px"><br>
+            <img src="images/5.gif" alt="pic" height="100px" width="294px" >
+        </div>
+        <div>  
+        <input type="text" id="inputText" class="absolute" placeholder="Entre something..." onfocus="textStyling();" onblur="textStylingRemove()">
+        <img id="buttonAdd"  src="images/add.png" title='Add'    class="absolute" onclick="addTodoItem('inputText');">
+    </div> 
+          <ul id="list" class="absolute"></ul>
+     </div>
+    <script src="Scripts/app.js"></script>
+</body>
+</html>
